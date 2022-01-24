@@ -16,7 +16,7 @@ Finally, once the user is ready, they can then check out to a payment page where
 
 ## Team Members
 
-* Mariam Yassa
+* Mariam Yassa [MariamYassa]
 * Oussama Jmili [OussamaJmili]
 * Kevin Xu [starmarke]
 * Robayth Dhrubo [Robayth-Dhrubo]
