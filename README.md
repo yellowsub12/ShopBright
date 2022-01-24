@@ -19,7 +19,7 @@ Finally, once the user is ready, they can then check out to a payment page where
 * Mariam Yassa
 * Oussama Jmili [OussamaJmili]
 * Kevin Xu [starmarke]
-* Robayth Dhrubo 
+* Robayth Dhrubo [Robayth-Dhrubo]
 * Samdarshi Tiwari [samdarshihawk]
 * Ali Turkman [yellowsub12]
 * Vithujanan Vigneswaran [Houdini29]
