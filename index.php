@@ -6,6 +6,6 @@
 <body>
 <h1>E-Commerce Website</h1>
 <p>Buy what you need!</p>
-  <p>That simple!</p>
+
 </body>
 </html>
