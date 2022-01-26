@@ -1,10 +1,10 @@
-:root{
+.root{
     --bar-height: 72px;
     --color-primary:#febd69;
     --color-primary-light:#232f3e;
 }
 
-body{
+.body{
     margin:0;
 font-family: cursive;
 }
@@ -13,9 +13,8 @@ font-family: cursive;
     background: content-box radial-gradient(#febd69, #232f3e);
     display:flex;
     align-items: center;
-padding-top: 0px;
-
-box-sizing:border-box
+    padding-top: 0px;
+    box-sizing:border-box
 }
 .u-centered{
     width: 100%;
@@ -42,7 +41,7 @@ box-sizing:border-box
 }
 .call-to-action__button:hover{
     background: transparent;
-color: initial;    
+    color: initial;    
 }
 .bar{
   position: fixed;
@@ -103,9 +102,9 @@ font-size: 3px;
 .nav__link{
     font-weight: 500;
     padding:16px 0;
-text-decoration: none;
-color: #232F3E;
-border-bottom: 0.1rem solid;
+    text-decoration: none;
+    color: #232F3E;
+    border-bottom: 0.1rem solid;
 }
 .nav__link:hover{
     opacity: 0.8;
@@ -113,7 +112,7 @@ border-bottom: 0.1rem solid;
 
 
 .matarial-icons div{
-width: 35px;
+  width: 35px;
   height: 5px;
   background-color: black;
   margin: 6px 0;
