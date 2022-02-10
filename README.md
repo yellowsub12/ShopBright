@@ -5,7 +5,7 @@
 Develop an Amazon-like e-commerce website.
 
 ## Description
-
+2020 was the start of a new decade and it was defined by the beginning of the COVID-19 global crisis. Due to the social distancing rules, people had to turn towards online shopping to procure daily necessities and various other products. This website will alow users to buy their everyday products from the comfort of their home or anywhere around the world and at any time of the day with just one click. Shoppers will be able to save time by not having to travel to a store to pick up their purchase since everything will be shipping to their address. 
 
 
 ## Core Features
