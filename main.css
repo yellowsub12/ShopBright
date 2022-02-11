@@ -1,3 +1,6 @@
+.carousel {
+    margin-top: 0.1rem !important;
+}
 .root{
     --bar-height: 72px;
     --color-primary:#febd69;
