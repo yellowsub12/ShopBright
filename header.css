@@ -1,9 +1,14 @@
 body {
     background-color: #eee
 }
-
+.section-header {
+    position: fixed;
+    top:0;
+    width: 100vw;
+    z-index: 999;
+}
 .header-main {
-    position: relative;
+    
     padding-top: 7px;
     padding-bottom: 7px;
     background-color: #0D3B66
