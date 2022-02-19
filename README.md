@@ -27,6 +27,5 @@ Finally, once the user is ready, they can then check out to a payment page where
 ## Technologies
 * JavaScript
 * HTML & CSS
-* Python
-* SQL
+* React.js
 * Bootstrap
