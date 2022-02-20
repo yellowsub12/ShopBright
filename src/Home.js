@@ -46,25 +46,25 @@ function home() {
     <div className='home_container'>
     <div className="home_rowz">
     <div className="home_row">
-        <Product 
+    <Product 
         id="1337"
-        title='The iPod Pro!'
-        price={19.99}
-        image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
-        rating = {5}
+        title='Toys'
+        price={29.99}
+        image ="https://images-na.ssl-images-amazon.com/images/G/15/CA-hq/2021/img/Consumables/XCM_CUTTLE_1362996_1867338_CA_379x304_1X_en_CA._SY304_CB641157495_.jpg"
+        rating = {3}
         />
         <Product 
         id="1342"
-        title='The iPod Pro!'
-        price={19.99}
-        image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
+        title='Watch'
+        price={49.99}
+        image ="https://m.media-amazon.com/images/I/41sK3jjPlaL._AC_SY200_.jpg"
         rating = {5}
         />
         <Product 
         id="13137"
-        title='The iPod Pro!'
-        price={19.99}
-        image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
+        title='Shoes'
+        price={59.99}
+        image ="https://images-na.ssl-images-amazon.com/images/G/15/GW/Dashboard/XCM_Manual_1198132_977323_ca_dex_dashboard_cards_379x304_1573283685._SY304_CB427434586_.jpg"
         rating = {5}
         />
 
@@ -74,48 +74,62 @@ function home() {
     <div className="home_row">
     <Product 
         id="1235337"
-        title='The iPod Pro!'
-        price={19.99}
-        image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
+        title='Workout Equipment'
+        price={69.99}
+        image ="https://images-na.ssl-images-amazon.com/images/G/15/CA-hq/2022/img/Home/XCM_CUTTLE_1409913_2192710_CA_CUTTLE_379x304_1X_en_CA._SY304_CB628419738_.jpg"
         rating = {5}
         />
         <Product 
         id="1253337"
-        title='The iPod Pro!'
-        price={19.99}
-        image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
+        title='Glasses'
+        price={29.99}
+        image ="https://m.media-amazon.com/images/I/211e2kNcJkL._AC_SY200_.jpg"
         rating = {5}
         />
         <Product 
         id="16234337"
-        title='The iPod Pro!'
+        title='Door Thingy'
         price={19.99}
-        image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
-        rating = {5}
+        image ="https://m.media-amazon.com/images/I/216G5eCaEyL._AC_SY200_.jpg"
+        rating = {4}
         />
         <Product 
         id="13373457"
-        title='The iPod Pro!'
-        price={19.99}
-        image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
-        rating = {5}
+        title='TV'
+        price={99.99}
+        image ="https://m.media-amazon.com/images/G/01/kindle/journeys/YzQ1ODEyNTMt/YzQ1ODEyNTMt-OWZmOTU3NDIt-w210._AC_SY200_.jpeg"
+        rating = {3}
         />
 
     </div>
     <div className="home_row">
     <Product 
         id="12432337"
+        title='PS5'
+        price={999.99}
+        image ="https://i5.walmartimages.com/asr/fd596ed4-bf03-4ecb-a3b0-7a9c0067df83.bb8f535c7677cebdd4010741c6476d3a.png"
+        rating = {5}
+        />
+        <Product 
+        id="1333627"
         title='The iPod Pro!'
-        price={19.99}
+        price={49.99}
         image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
         rating = {5}
         />
         <Product 
         id="1333627"
         title='The iPod Pro!'
-        price={19.99}
+        price={49.99}
         image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
         rating = {5}
+        />
+        <Product 
+        id="1337"
+        title='Toys'
+        price={29.99}
+        image ="https://images-na.ssl-images-amazon.com/images/G/15/CA-hq/2021/img/Consumables/XCM_CUTTLE_1362996_1867338_CA_379x304_1X_en_CA._SY304_CB641157495_.jpg"
+        rating = {3}
         />
 </div>
     </div>
