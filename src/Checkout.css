@@ -1,10 +1,19 @@
 .checkout{
-    display: flex;
-    padding: 20px;
-    background-color:white;
+    padding: 50px;
     height:max-content;
+    
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ececec;
+    margin-bottom: 300px;
+    
 }
+.amazon-checkout{
+    background-color: #ececec;
 
+}
 .checkout_ad{
     width:50%;
     height:max-content;
@@ -14,7 +23,7 @@
 .checkout_title{
     margin-right:10px;
     padding:10px;
-    border-bottom:1px solid lightgray;
+    border-bottom:1px solid #ececec;
 }
 
 .checkout_right{

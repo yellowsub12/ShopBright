@@ -7,6 +7,7 @@ import Product from './Product';
 function home() {
   return (
     <div className="home">
+      
         <div id="container">
 
     <div class="carousel">
@@ -117,26 +118,12 @@ function home() {
         image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
         rating = {5}
         />
-        <Product 
-        id="1333627"
-        title='The iPod Pro!'
-        price={49.99}
-        image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
-        rating = {5}
-        />
-        <Product 
-        id="1337"
-        title='Toys'
-        price={29.99}
-        image ="https://images-na.ssl-images-amazon.com/images/G/15/CA-hq/2021/img/Consumables/XCM_CUTTLE_1362996_1867338_CA_379x304_1X_en_CA._SY304_CB641157495_.jpg"
-        rating = {3}
-        />
+      
 </div>
     </div>
     </div>
-    <div className='footer'>
-            <footer class="footer">
         <div class="foot-sign-in"> 
+        <div id="container">
 
             <div call-to-action></div>
             <div class="sign-in-title">
@@ -150,9 +137,11 @@ function home() {
             </div>
         </div>
         </div>
+        </div>
+
         
-      </footer>
-</div>
+       
+
 </div>
     </div>
   )

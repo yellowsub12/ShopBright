@@ -5,6 +5,8 @@ import Subtotal from './Subtotal.js';
 
 function Checkout() {
   return (
+    <section class="amazon-checkout">
+
     <div className='checkout'>
     <div className='checkout_left'>
         <img src="https://libertyhousenh.org/wp-content/uploads/2020/10/Amazon-smile-web-banner.jpg" alt="" class="checkout_ad"/>
@@ -25,9 +27,10 @@ function Checkout() {
 
     </div>
 
-
-
     </div>
+
+
+    </section>
   )
 }
 
