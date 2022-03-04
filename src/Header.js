@@ -4,7 +4,6 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 
-
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
   return (
@@ -13,8 +12,8 @@ function Header() {
       <div class="container-fluid">
           <div class="row align-items-center">
               <div class="col-lg-3 col-sm-4 col-md-4 col-5"> <a href="/" class="brand-wrap" data-abc="true">
-              <span class="logo">Amazon</span> </a> </div>
-              <div class="col-lg-4 col-xl-5 col-sm-8 col-md-4 d-none d-md-block">
+              <span class="logo">Amazon</span> </a> </div>                              
+              <div class="col-lg-4 col-xl-5 col-sm-8 col-md-4 d-none d-md-block">                                                 
                   <form action="#" class="search-wrap">
                       <div class="input-group w-100"> <input type="text" class="form-control search-form" placeholder="Search"/>
                           <div class="input-group-append"> <button class="btn btn-primary search-button" type="submit"> <i class="fa fa-search"></i> </button> </div>
@@ -23,7 +22,7 @@ function Header() {
               </div>
               <div class="col-lg-5 col-xl-4 col-sm-8 col-md-4 col-7">
                   <div class="d-flex justify-content-end">
-                  <Link to="/Login"><a href="/login.html" data-abc="true" class="nav-link widget-header" >Login</a></Link>
+                <Link to="/Login"><a href="/login.html" data-abc="true" class="nav-link widget-header" >Login</a></Link>
                       <span class="vl"></span>
                       <Link to="/Checkout">
                       <a class="nav-link nav-icons widget-header" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-abc="true">

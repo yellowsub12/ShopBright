@@ -1,10 +1,24 @@
 import React from 'react';
 import "./Home.css";
 import Product from './Product';
+import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router";
+import { useUserAuth } from "./Context/UserAuthContext";
 
 
 
-function home() {
+
+function Home() {
+  const { logOut, user } = useUserAuth();
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      navigate("/");
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
   return (
     <div className="home">
       
@@ -147,4 +161,4 @@ function home() {
   )
 }
 
-export default home
+export default Home
