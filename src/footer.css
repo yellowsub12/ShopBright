@@ -1,6 +1,8 @@
 
 .amazon-footer {
     background-color: #232f3e;
+    margin-top:auto; 
+    min-height:50px;
   }
   .amazon-footer-container {
     width: 90%;

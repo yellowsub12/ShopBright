@@ -1,0 +1,19 @@
+.order {
+
+    border: 1px solid rgb(172, 167, 167);
+    background-color: white;
+    position: relative;
+    padding: 50px;
+    margin: 30px 0;
+}
+
+.order_id {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+  }
+
+.order_total {
+    font-weight: 300;
+    text-align: right;
+  }

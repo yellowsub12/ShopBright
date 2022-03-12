@@ -47,6 +47,7 @@ function home() {
     <div className='home_container'>
     <div className="home_rowz">
     <div className="home_row">
+    
     <Product 
         id="1337"
         title='Toys'
