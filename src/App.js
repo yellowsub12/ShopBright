@@ -12,6 +12,8 @@ import  {BrowserRouter as Router, Switch, Routes, Route} from "react-router-dom"
 import Login from './Login';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import Detail from './Detail';
+
 
 const promise = loadStripe (
   "pk_test_51KZkqRJEK8PYFT8TH3vNr8DR0fI34i9wYBsxnD5XsiXbLI9QMYN1yMC8mb1DgHo19ek2aAj5DnxNx68QZz0hD7bm00w410iw7f"
@@ -53,6 +55,7 @@ function App() {
     <Route path="/Login" element={[ <Login />]} />
     <Route path="/payment" element={[<Header/>, <Elements stripe={promise}><Payment/> </Elements>, <Footer />]} />
     <Route path="/orders" element={[<Header/>, <Orders/>, <Footer />]} />
+    <Route path="/detail" element={[<Header/>,<Detail />,<Footer />]} />
 
 
     <Route path="/" element={[<Header/>,<Home />,<Footer />]} />

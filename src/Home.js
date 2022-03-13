@@ -63,6 +63,7 @@ function Home() {
         price={29.99}
         image ="https://images-na.ssl-images-amazon.com/images/G/15/CA-hq/2021/img/Consumables/XCM_CUTTLE_1362996_1867338_CA_379x304_1X_en_CA._SY304_CB641157495_.jpg"
         rating = {3}
+        descr = "Make use of the toys in structured group activities."
         />
         <Product 
         id="1342"
@@ -70,6 +71,7 @@ function Home() {
         price={49.99}
         image ="https://m.media-amazon.com/images/I/41sK3jjPlaL._AC_SY200_.jpg"
         rating = {5}
+        descr="Use the built-in Amazon Alexa to get quick news and information, view the weather, set timers and alarm clocks, control your smart home device and other information (third-party applications may be required; Amazon Alexa cannot provide it in all countries)"
         />
         <Product 
         id="13137"
@@ -77,6 +79,12 @@ function Home() {
         price={59.99}
         image ="https://images-na.ssl-images-amazon.com/images/G/15/GW/Dashboard/XCM_Manual_1198132_977323_ca_dex_dashboard_cards_379x304_1573283685._SY304_CB427434586_.jpg"
         rating = {5}
+        descr="
+        Waterproof leather
+Breathable waterproof membrane
+Removable cushion insert insole
+Mini-lug rubber outsole
+Cambrelle moisture wicking lining"
         />
 
 
@@ -89,6 +97,7 @@ function Home() {
         price={69.99}
         image ="https://images-na.ssl-images-amazon.com/images/G/15/CA-hq/2022/img/Home/XCM_CUTTLE_1409913_2192710_CA_CUTTLE_379x304_1X_en_CA._SY304_CB628419738_.jpg"
         rating = {5}
+        descr="FUNCTIONALITY: RIMSPORTS' ankle straps can be used for cable machines and Glutes Exercise equipment and can help firm up your glutes workout These ankle cuffs are effective for exercise machines for legs, especially if you use these leg straps for exercises such as inner and outer thigh contractions, leg extensions, cable kickbacks, hip abduction, and cable lunges, to improve your leg game!"
         />
         <Product 
         id="1253337"
