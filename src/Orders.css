@@ -1,7 +1,11 @@
 .orders {
-    padding: 20px 80px;
+    padding: 50px;
 }
 
-.orders > h1 {
-    margin: 30px 0;
+.order {
+
+    border: 5px solid gray;
+    position: relative;
+    padding: 60px;
 }
+

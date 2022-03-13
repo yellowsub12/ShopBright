@@ -1,10 +1,19 @@
 import React from 'react';
 import "./Home.css";
 import Product from './Product';
+import { Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
+import { auth } from "./firebase";
 
 
 
-function home() {
+function Home() {
+  const handleAuthentication = () => {
+      if (user) {
+          auth.signOut();
+      }
+  }
+  const [{ basket, user }, dispatch] = useStateValue();
   return (
     <div className="home">
       
@@ -126,8 +135,9 @@ function home() {
         <div class="foot-sign-in"> 
         <div id="container">
 
+          
             <div call-to-action></div>
-            <div class="sign-in-title">
+                 <div class="sign-in-title">
                 <div>
                 See personalized recommendations
             </div>
@@ -137,6 +147,8 @@ function home() {
                 New customer? Start here.
             </div>
         </div>
+
+
         </div>
         </div>
 
@@ -148,4 +160,4 @@ function home() {
   )
 }
 
-export default home
+export default Home

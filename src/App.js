@@ -1,12 +1,12 @@
 import './App.css';
 import {auth} from "./firebase";
 import React, { useEffect } from 'react';
-import Header from './Header';
+import Header from './NavBar/Header';
 import Home from './Home';
 import Checkout from './Checkout';
-import Payment from './Payment';
+import Payment from './stripe_payment/Payment';
 import { useStateValue } from './StateProvider';
-import Footer from './footer';
+import Footer from './Footer/footer';
 import Orders from './Orders';
 import  {BrowserRouter as Router, Switch, Routes, Route} from "react-router-dom"
 import Login from './Login';
