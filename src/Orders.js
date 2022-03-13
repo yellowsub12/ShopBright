@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';import './Orders.css';
 import { useStateValue } from "./StateProvider";
 import { db } from './firebase';
-import CheckoutProduct from "./Checkout.js";
+import CheckoutProduct from "./CheckoutProduct.js";
 import CurrencyFormat from "react-currency-format";
 import moment from "moment";
 
