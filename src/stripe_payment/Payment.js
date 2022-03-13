@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import CheckoutProduct from '../Checkout.js';
+import CheckoutProduct from '../CheckoutProduct.js';
 import './Payment.css';
 import {useStateValue} from "../StateProvider";
 import CurrencyFormat from "react-currency-format";
