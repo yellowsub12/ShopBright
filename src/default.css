@@ -1,0 +1,333 @@
+/* global */
+body {
+    margin: 0;
+  }
+  a i {
+    color:rgb(212, 212, 212);
+  }
+  a i:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* page -top */
+  
+  #page-top {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  #top-banner {
+    margin-left: 0px;
+    padding: 0px;
+    background-image: url('../images/ads/ad-top-banner-01.png');
+    background-size: auto;
+    height: 50px;
+  }
+  
+  #function-bar {
+    background-color: rgb(41, 46, 64);
+    padding: 20px;
+  }
+  
+  #logo {
+    padding-top: 5px;
+  }
+  
+  #search-bar {
+    margin-top: 10px;
+  }
+  #function-icons {
+    padding-top: 8px;
+  }
+  #menu-icons {
+    position: absolute;
+    top:20px;
+    right:50px;
+  }
+  
+  #menu-icons > .fa {
+    color: white;
+  }
+  #menu-icons li {
+    padding-right: 30px;
+  }
+  
+  .input-group-addon-search-icon {
+    background-color: rgb(245, 198, 93);
+  }
+  .input-group-addon-search-icon:hover {
+    background-color: rgb(240, 176, 34);
+  }
+  
+  .view-cart-box{
+    position:absolute;
+    top: 120px;
+    right:30px;
+    z-index:100;
+    width: 130px;
+    background-color:rgb(245, 188, 60);
+    border-radius: 10px;
+    padding:10px;
+  }
+  
+  .view-cart-box button{
+    border-radius: 10px;
+  }
+  
+  .float-review-box {
+    position: absolute;
+    top:130%;
+    width: 160px;
+    height: 112px;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px black;
+  }
+  
+
+  
+  #main-ads {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+  }
+  #main-ads img {
+    width: 100%;
+  }
+  
+  #toward-left {
+    position: absolute;
+    top: 30%;
+    left:5%;
+  }
+  
+  #toward-right {
+    position: absolute;
+    top: 30%;
+    right:5%;
+  }
+  
+  #sidebar {
+    background: rgb(251, 251, 251);
+    text-align: center;
+  }
+  
+  #sidebar .col-md-12 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(186, 186, 186);
+  }
+  
+
+  
+  .text-right {
+    text-align: right;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+  p.smaller {
+    font-size: 0.9em;
+  }
+  
+  #content a > img {
+    display: inline-block;
+  }
+  
+  .box-outside-padding {
+    padding:5px;
+    min-width:150px;
+  }
+  
+  .box {
+    padding: 15px;
+    padding-bottom: 30px;
+    border:1px solid rgb(213, 213, 213);
+  }
+  
+  .row.cart {
+    padding: 20px;
+    border-bottom: 1px solid rgb(246, 246, 246);
+  }
+  
+  .review-img {
+    display:inline;
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .logo-text a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;
+  }
+  
+  .logo-text a:hover {
+    text-decoration: none;
+  }
+  
+  .img-gallery {
+    width: 100%;
+  }
+  
+  .img-box {
+    display: inline-block;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    background: black;
+    vertical-align: middle;
+  }
+  
+  #content img {
+    margin-top:auto;
+    margin-bottom: auto;
+    width: 100%;
+    vertical-align: middle;
+  }
+  
+  .add-to-cart-box {
+    padding:20px
+  }
+  .add-to-cart-box > .col-md-12{
+    margin-top:20px;
+  }
+  
+  .recom-box {
+    margin-bottom:20px;
+    margin-top:20px;
+    border:solid 5px rgb(249, 249, 249);
+  }
+  
+  /* footer */
+  #footer {
+    text-align: center;
+  }
+  
+  .clickable-bar .well:hover {
+    background-color: #e8e8e8;
+    transition: 0.5 ease;
+  }
+  
+  .clickable-bar a {
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+  }
+  
+  .clickable-bar a:hover {
+    color: rgb(34, 34, 34);
+  }
+  
+  .clickable-bar a:active {
+    color: rgb(34, 34, 34);
+  }
+  
+  /* Producs Details */
+  .thumb {
+    width: 100%;
+    margin-bottom: 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  
+  .thumb:hover {
+    opacity: 1;
+    box-shadow: 2 2 2 1 rgb(217, 139, 22);
+  }
+  
+  #img-display {
+    min-height: 600px;
+  }
+  
+  /* Payment Page */
+  #payment-input-box {
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 300px;
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .payment-box {
+    margin-bottom: 100px;
+  
+  }
+  
+  #content img {
+    width: 100%;
+    height: 100%;
+  }
+  /* footer */
+  
+  #footer {
+    margin-top:50px;
+    text-align: center;
+    background-color: rgb(41, 46, 64);
+    color:rgb(219, 219, 219);
+  }
+
+  /* Bootstrap CDn link for CSS */
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css);
+
+/*Universal styling for all cards*/
+body{
+    background: gray;
+}
+
+.container{
+    margin-top: 110px !important;
+}
+
+.section{
+    background-color: #fff;
+    border-style: hidden;
+    margin: 25px;
+    padding: 15px;
+
+}
+
+.section-title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 20px; 
+    
+}
+
+.card-img-top{
+    width: 100%;
+    max-height: 15vw;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: translateY(-9px);
+    transition: transform .3s;
+}
+
+.card-price{
+    color: #fb3531;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.cursor{
+    cursor: pointer;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

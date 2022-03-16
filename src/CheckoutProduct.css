@@ -1,0 +1,19 @@
+.checkoutProduct {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.image{
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+
+}
+
+.rating {
+    display: flex;
+}
