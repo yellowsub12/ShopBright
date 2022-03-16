@@ -1,0 +1,11 @@
+.orders {
+    padding: 50px;
+}
+
+.order {
+
+    border: 5px solid gray;
+    position: relative;
+    padding: 60px;
+}
+
