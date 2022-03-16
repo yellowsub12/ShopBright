@@ -4,6 +4,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../StateProvider";
 import { auth } from "../firebase";
+import Navbar from 'react-bootstrap/Navbar'
 
 
 function Header() {
@@ -32,6 +33,7 @@ function Header() {
                   <Link to="/orders"><a data-abc="true" class="nav-link widget-header">Hello {!user ? 'Guest' : user.email}</a></Link>
                   <Link to="/Login"><a data-abc="true" class="nav-link widget-header" >{user ? <Link to="/"><div onClick={handleAuthentication}>Sign Out</div></Link> : 'Sign In'}</a></Link>
                       <Link to="/checkout">
+                          
                       <a class="nav-link nav-icons widget-header" data-abc="true">
                           My Cart
                           <img src="/imgs/shopping-cart (6).png"/>
