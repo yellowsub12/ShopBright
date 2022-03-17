@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Product.css"
 import {useStateValue} from "./StateProvider"
-
-
+import Button from 'react-bootstrap/Button';
+import Products from './Products';
 function Product({id, title, image, price, rating, descr = ''}) {
 
-  const [{basket}, dispatch] = useStateValue();
+  const [{basket}, dispatch] = useStateValue(Products);
 
   const addToBasket = () => {
       dispatch({
@@ -34,11 +34,11 @@ function Product({id, title, image, price, rating, descr = ''}) {
   }
 
   return (
-      <div className='product' onClick={jumpToDetail}>
-          <div class="product_info" >
-              <p className='product_title'>{title}</p>
-              <p className='product_price'><small>$</small><strong>{price}</strong></p>
-              <div class="product_rating">
+      <div className='product'>
+          <div class="info" >
+              <p className='title' onClick={jumpToDetail}>{title}</p>
+              <p className='price' onClick={jumpToDetail}><small>$</small><strong>{price}</strong></p>
+              <div class="rating" onClick={jumpToDetail}>
                   {Array(rating)
                       .fill()
                       .map((_, i) => (
@@ -46,8 +46,8 @@ function Product({id, title, image, price, rating, descr = ''}) {
                       ))}
               </div>
           </div>
-          <img src={image} alt=""/>
-          <button onClick={addToBasket}>Add to Basket</button>
+          <img src={image} alt="" onClick={jumpToDetail}/>
+          <Button variant="primary" onClick={addToBasket}>Add to Basket</Button>
       </div>
   )
 }

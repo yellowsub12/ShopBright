@@ -7,6 +7,7 @@ import { StateProvider } from './StateProvider';
 import reducer, {initialState} from './reducer';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>

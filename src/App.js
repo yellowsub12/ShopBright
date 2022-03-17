@@ -13,6 +13,8 @@ import Login from './Login';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Detail from './Detail';
+import Category from './Components/Category';
+
 
 
 const promise = loadStripe (
@@ -56,6 +58,7 @@ function App() {
     <Route path="/payment" element={[<Header/>, <Elements stripe={promise}><Payment/> </Elements>, <Footer />]} />
     <Route path="/orders" element={[<Header/>, <Orders/>, <Footer />]} />
     <Route path="/detail" element={[<Header/>,<Detail />,<Footer />]} />
+    <Route path="/category" element={[<Header/>,<Category />,<Footer />]} />
 
 
     <Route path="/" element={[<Header/>,<Home />,<Footer />]} />

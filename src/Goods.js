@@ -20,6 +20,19 @@ function Goods({id, title, image, price, rating, descr = ''}) {
         });
     };
 
+    const jumpToDetail = () => {
+        //save data to session storage，and enter detail page
+        window.sessionStorage.setItem("goods", JSON.stringify({
+            id: id,
+            title: title,
+            image: image,
+            price: price,
+            rating: rating,
+            descr: descr,
+        }))
+        window.location.href = './detail';
+    }
+    
     return (
         <div className='goods'>
             <div className="goods_image_box">

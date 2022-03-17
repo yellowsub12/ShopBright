@@ -62,18 +62,16 @@ body {
 
 .search-form {
     border: 1px solid #ffffff !important;
-    margin-left:-50px;
 }
 
 .search-button {
     color: #0D3B66;
     background-color: #ffffff;
-    border-color: #ffffff;
-    width: 50px;
+    border-color: #ffffff
 }
 
 .navbar-main {
-    background-color: #fff;
+    background-color: #fff
 }
 
 .navbar-toggler {
@@ -129,8 +127,6 @@ body {
     background-color: transparent;
     border: 0
 }
-
-
 
 .navbar-toggler-icon {
     background-image: url(https://img.icons8.com/ios/50/000000/menu.png)

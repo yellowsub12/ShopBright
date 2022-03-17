@@ -14,7 +14,7 @@ function Footer() {
     <div class="amazon-footer-lists">
       <div class="amazon-row">
         <div class="amazon-col  amazon-col--30">
-          <a href="/" class="amazon-footer-logo"><img src="https://images-na.ssl-images-amazon.com/images/G/15/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_ca-main._CB468775011_.png" alt="Amazon Logo" class="amazon-footer-logo-image" /></a>
+          <a href="/" class="amazon-footer-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="amazon-footer-logo-image" /></a>
         </div>
         <div class="amazon-col  amazon-col--20">
           <h4 class="amazon-footer-title">Our Products</h4>

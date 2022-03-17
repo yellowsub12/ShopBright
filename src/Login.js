@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, {Component, useState } from 'react';
 import './Login.css'
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./firebase";
+import {Button, Stack} from 'react-bootstrap';
 
-function Login() {
+
+function Login () {
     const history = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -37,25 +39,30 @@ function Login() {
             <Link to='/'>
                 <img
                     className="login__logo"
-                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png' 
+                    src='' 
                 />
             </Link>
 
-            <div className='login__container'>
-                <h1>Sign-in</h1>
-
+            <div className='outer inner'>
+            <h3>Log in</h3>
                 <form>
-                    <h5>E-mail</h5>
-                    <input type='text' value={email} onChange={e => setEmail(e.target.value)} />
+                <div className="form-group">
+                    <h5>Email</h5>
+                    <input type="email" className="form-control" placeholder="Enter email" value={email} onChange={e => setEmail(e.target.value)} />
+                    </div>
 
+                    <div className="form-group">
                     <h5>Password</h5>
-                    <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
+                    <input type="password" className="form-control" placeholder="Enter password" value={password} onChange={e => setPassword(e.target.value)} />
+                    </div>
 
-                    <button type='submit' onClick={signIn} className='login__signInButton'>Sign In</button>
+                  
+
+                    <Stack gap={2} className="col-md-10 mx-auto"><Button type='submit' variant="primary" onClick={signIn} className="btn btn-dark btn-lg btn-block">Sign In</Button>
+
+
+                <Button variant="danger" onClick={register} className="btn btn-lg btn-block">Create Account!</Button></Stack>
                 </form>
-
-
-                <button onClick={register} className='login__registerButton'>Create your Amazon Account</button>
             </div>
         </div>
     )
