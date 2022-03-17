@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
-
+import Button from 'react-bootstrap/Button';
 import {useStateValue} from "../StateProvider"
 import Products from '../Products';
-import Button from 'react-bootstrap/Button';
 import './Category.css';
 
 
 function CategoryProducts({id, title, price, image, rating, category, descr = ''}) {
   
-    const [{basket}, dispatch] = useStateValue();
+    const [{basket}, dispatch] = useStateValue(Products);
     const [data, setData] = useState(Products);
 
     const jumpToDetail = () => {
@@ -33,14 +32,12 @@ function CategoryProducts({id, title, price, image, rating, category, descr = ''
                 image: image,
                 price: price,
                 rating: rating,
-                category: category,
-                descr: descr
             },
         });
     };
   
     return (
-         <div class="col-md-4 mb-4" key={id}>
+         <div class="col-md-4 mb-4 card_row" key={id}>
                                  <div class="card">
                                  <img onClick={jumpToDetail} src={image} class="card-img-top" alt="..."/>
                                  <div class="card-body">

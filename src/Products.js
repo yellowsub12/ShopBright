@@ -2,7 +2,7 @@
 
 const Products=[
     {
-        id:"1235337",
+        id:"1",
         title:'Workout Equipment',
         price:69.99,
         image :"https://images-na.ssl-images-amazon.com/images/G/15/CA-hq/2022/img/Home/XCM_CUTTLE_1409913_2192710_CA_CUTTLE_379x304_1X_en_CA._SY304_CB628419738_.jpg",

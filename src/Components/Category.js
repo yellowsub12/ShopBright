@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import Button from 'react-bootstrap/Button';
 import Products from '../Products';
 import './Category.css';
 import Product from '../Product';
 import {useStateValue} from "../StateProvider"
 import CategoryProducts from './CategoryProducts';
+
 
 
 function Category({id, title, image, price, rating, descr = ''}) {
@@ -16,7 +16,7 @@ function Category({id, title, image, price, rating, descr = ''}) {
     return (
         <div class="Category">
             
-            <div className="container-fluid mx-2">
+            <div className="container-fluid mx-2 ">
                 <div className="row mt-5 mx-2">
                     <div className="col-md-3">
 
@@ -33,8 +33,8 @@ function Category({id, title, image, price, rating, descr = ''}) {
 
                     </div>
 
-                    <div class="col-md-9">
-                        <div class="row">
+                    <div class="col-md-9 card_row">
+                        <div class="row rowz">
                         {data.map(item=>(
                         <CategoryProducts
                         id= {item.id}

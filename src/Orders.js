@@ -4,8 +4,24 @@ import { db } from './firebase';
 import CheckoutProduct from "./CheckoutProduct.js";
 import CurrencyFormat from "react-currency-format";
 import moment from "moment";
+import Button from 'react-bootstrap/Button'
 
 function Order({ order }) {
+    const [orders, setOrders] = useState([]);
+    const [{ basket, user }, dispatch] = useStateValue();    
+    const deleteDocument = () => {
+        db
+            .collection('users')
+            .doc(user?.uid)
+            .collection('orders')
+            .doc(order.id)
+            .delete()
+            .then(() => {
+                console.log("Document deleted successfully" + order.id);
+            }).catch((err) => {
+                console.log("An error occured while deleting the document");
+                console.log("Error : " + err.message);
+            });}
   return (
       <div class="order">
           <h2>Order</h2>
@@ -13,7 +29,10 @@ function Order({ order }) {
           <p class="order_id">
               Order ID : {order.id}
               </p>
+              <Button variant="primary" onClick={deleteDocument} >Remove Order!</Button>
+
               {order.data.basket?.map(item => (
+                <div>
                 <CheckoutProduct
                     id={item.id}
                     title={item.title}
@@ -22,6 +41,7 @@ function Order({ order }) {
                     rating={item.rating}
                     hideButton
                 />
+                </div>
             ))}
             <CurrencyFormat
                 renderText={(value) => (
@@ -32,12 +52,20 @@ function Order({ order }) {
                 displayType={"text"}
                 thousandSeparator={true}
                 prefix={"$"}/>   
+                                
+
         </div>
+        
     
   )
 }
 
 function Order_History() {
+   
+            
+            
+
+
     const [orders, setOrders] = useState([]);
     const [{ basket, user }, dispatch] = useStateValue();    
     useEffect(()=>{
@@ -69,6 +97,7 @@ function Order_History() {
                 {orders?.map(order => (
                     <Order order={order} />
                 ))}
+                
             </div>
         </div>
   )
