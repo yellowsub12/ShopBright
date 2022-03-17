@@ -1,0 +1,337 @@
+Written by Robayth
+
+Test Case US 01:
+
+             User Sign-in	
+	Test Description: User Sign-in into their account
+	
+	Test condition: Application launches successfully, user's email and password exist in the databse and proper integration of Firebase            
+             Authentication 
+	
+	Pre-Condition: Application launches successfully and user able to reach to Sign-in page
+
+	Steps:
+	
+	1. Enter email id
+	As expected
+	2. Enter Password
+	As Expected
+	3. Click Sign in
+	Check validation
+	// show error message if there is an issue with sign in
+	4. If Sign in successful user is redirected to home page
+
+	Expected Result: User sign-in successful and user is redirected to home page
+	Actual Result: After successfull sign-in user is redirected to home page and user name is rendered on the navbar
+	Pass/fail: Pass
+	Additional Note:  
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test Case US 02:
+	 User Registration	
+	Test Description: User create account
+	
+	Test condition: Application launches successfully and proper integration of Firebase Authentication 
+	
+	Pre-Condition: Application launches successfully and user able to reach to Sign-in page
+
+	Steps:
+	
+	1. Enter email id
+	As expected
+	2. Enter Password
+	As Expected
+	3. Click Create your amazon account
+	Check validation
+	// show error message if there is an issue with sign in
+	4. New user info is stored in firebase database
+	As Expected
+	5. If account is created successfully, user is redirected to home page
+
+	Expected Result: User is registered successful and then user is redirected to home page
+	Actual Result: After successfull registration, user is redirected to home page and user name is rendered on the navbar
+	Pass/fail: Pass
+	Additional Note:  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case US 03:
+	Admin add new User in User Database using Admin Panel  	
+	Test Description: Admin able to add new User in User Database (Firebase) using retool 
+	
+	Test condition: Admin successfully log in to retool and Admin Panel connected to Product Database  
+	
+	Pre-Condition: Admin able to log in to retool and access the dashboard. The Dashboard is successfully connected to Firebase Database 
+	Steps:
+	
+	
+	1. Run Query to bring the database to the User database to the dashboard from firebase
+	Check validation
+	As expected
+	2. Add new user details like email and password.
+	As Expected
+	3. Click on submit
+	//see if a message of failure shows if any required info is missing in the form
+	As Expected
+	4. The new user is added to the firebase database
+	As Expected
+	5. The table is reloaded on the admin dashboard to update the user table
+	As Expected
+
+	Expected Result: Admin able to add new user in User (Firebase) 
+	Actual Result: Admin able to add new user in User (Firebase)  
+	Pass/fail: Pass
+	Additional Note:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case US 04: 
+	Admin Update Product info using Product Inventory Page  	
+	Test Description: Admin able update Product Database (Firebase) using retool 
+	
+	Test condition: Admin successfully log in to retool and Product Inventory Page connected to Product Database  
+	
+	Pre-Condition: Able to reach to log in to retool and access the dashboard. The Dashboard is successfully connected Firebase Database 
+	Steps:
+	
+	
+	1. Run Query to bring the database to the product database to the dashboard from firebase
+	Check validation
+	As expected
+	2. Update Product Info by clicking on any row then update the info and save it
+	As Expected
+	3. The firebase database is updated with new product info.
+	As Expected
+	4. The table on the dashboard is reload to show the updated info
+	//see if a message of successful/failure shows
+
+	As Expected
+	Expected Result: Admin able update Product Database (Firebase) 
+	Actual Result: Admin update Product Database (Firebase) using retool 
+	Pass/fail: Pass
+	Additional Note:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case US 05:  
+	Admin Delete Product info using Product Inventory Page  	
+	Test Description: Admin able delete product from Product Database (Firebase) using retool 
+	
+	Test condition: Admin successfully log in to retool and Product Inventory Page connected to Product Database  
+	
+	Pre-Condition: Able to reach to log in to retool and access the dashboard. The Dashboard is successfully connected Firebase Database 
+	Steps:
+	
+	
+	1. Run Query to bring the database to the product database to the dashboard from firebase
+	Check validation
+	As expected
+	2. Delete particular product by selecting a row then click on the delete button
+	As Expected
+	3. The firebase database is updated with new change.
+	As Expected
+	4. The table on the dashboard is reload to show the updated table
+	//see if a message of successful/failure shows
+
+	As Expected
+	Expected Result: Admin able delete multiple product from Product Database (Firebase) 
+	Actual Result: Admin delete only one product at time from Product Database (Firebase) using retool 
+	Pass/fail: Pass
+	Additional Note:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case US 06:  
+	Check Product Detail's 	
+	Test Description: User able to click product and it will redirect the page to the product details page
+	
+	Test condition: User have to click a product from catagories and it will bring the product page.  
+	
+	Pre-Condition:   Able to reach the a product details page where descriptions are given.
+
+	Steps:
+	
+	
+	1. Go to the home 
+	2. user has to choose any products from catagory 
+	3. Product page will show
+	As Expected
+	4. User can successfully see the a product details rating and can add product to the cart.
+	As Expected
+	Expected Result: Able to see a product 
+	Actual Result: User can add products and see the decription and ratings
+	Pass/fail: Pass
+	Additional Note:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case US 07:  
+         Adding products to the cart
+	Test Description: Add a product to the cart, the user should be able to set the number of products to buy.
+	
+	Test condition: User have to click a product and it will bring the cart page where user will be able to add the product as well as set the number of product.  
+	
+	Pre-Condition:   Able to reach the a product details page where descriptions are given and add products.
+
+	Steps:
+	
+	
+	1. Go to the home 
+	2. user has to choose any products from catagory 
+	3. Product page will show
+	As Expected
+	4. User can successfully see the a product details rating and can add product to the cart which will be show the number incorner remove product from the cart.
+	
+Expected Result: Able to add a product.
+	Actual Result: User can add products to the cart.
+	Pass/fail: Pass
+	Additional Note:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case US 08:
+ Change the quantity of a product in the cart.
+Test Description:  user can change the amount product add and remove product from the cart.
+	Test condition: Able to reach the cart page
+	Pre-Condition:   Able to reach the a product details page where descriptions are given and add products and total amount will show in the cart .
+
+	Steps:
+
+	1. Go to the home 
+	2. user has to choose any products from catagory 
+	3. Product page will show
+	As Expected
+	4. User can successfully see the a product details rating and can add product to the cart.
+	As Expected
+            5.User can add product to the cart
+            6. User can add and remove product from the cart
+ 	Expected Result: Able to add  a product to the cart
+	Actual Result: User can add products and  set the number
+	Pass/fail: Pass
+	Additional Note:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case US 09:
+	Product Removal from Cart	
+	Test Description: User can remove a product from the cart
+
+	Test condition: Application launches successfully, item is removed from cart and item price is deducted from subtotal
+	
+	Pre-Condition: Application launches successfully and user is able to add items to cart
+
+	Steps:
+	
+	1. Click "remove from basket" button
+	2. If removal was successful, user can no longer see item and subtotal is changed 
+
+	Expected Result: item is successfully removed and subtotal is changed
+	Actual Result: After successful removing of item, the user no longer sees the item in cart and the price of removed item is deducted from subtotal
+	Pass/fail: Pass
+	Additional Note:  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case US 10:
+Add a payment method 
+Test Description: user can add a card to the checkout page .
+Test condition: Able to reach the Product Detail page
+	Pre-Condition:   Able to reach the checkout page.
+
+	Steps:
+	
+	1. Go to cart page
+	2. user has to press the proceed to checkout button
+	3. Checkout page will show up.
+            4.user can add card number in the payment method.
+	As Expected
+	
+ 	Expected Result: Able to add a card in the payment method.
+	Actual Result: User successfully added a card in the payment method.
+	Pass/fail: Pass
+	Additional Note:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test Case US 11:
+Check the Subtotal
+Test Description: User can add product as much as he wants and the total price of the products will show in the cart page.
+Test condition: Able to reach the cart page 
+	Pre-Condition:   Able to reach the checkout page.
+
+	Steps:
+	
+	1. Go to cart page
+	2. User can see the see the subtotal of the added products.
+
+	As Expected
+	
+ 	Expected Result: Able to so the subtotal with tax,shipping fee.(Ongoing)
+	Actual Result: User successfully can see the subtotal 
+	Pass/fail: 
+	Additional Note:
+ 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test Case US 12:
+Place an order 
+Test Description: User can place an order of his selected items.
+Test condition: Able to reach the  checkout page.
+	Pre-Condition:   Able to add products and payment method to BUY
+
+	Steps:
+	
+	1. Go to checkout page
+	2. User can see the see the Payment method
+            3. Enter a card number
+            4.Then click BUY
+                Button should work 
+            As expected
+	
+ 	Expected Result: Able to BUY
+	Actual Result: User successfully can purchase 
+	Pass/fail: Pass
+	Additional Note:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test Case US 13:
+View the current order
+Test Description: User can see his/her current order after purchasing.
+Test condition: Able to reach the  current order page
+	Pre-Condition:   Able to purchase
+
+	Steps:
+	
+	1. Go to current order page
+	2. User can see the his purchased order 
+             As expected
+	
+ 	Expected Result: Able to see current order
+	Actual Result: User successfully see his purchased order.
+	Pass/fail: Pass
+	Additional Note:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test Case US 14:
+Cancel an order
+Test Description: User can see his/her current order after purchasing.
+Test condition: Able to reach the  current order page
+	Pre-Condition:   Able to purchase
+
+	Steps:
+	
+	1. Go to current order page
+	2. User can see the his purchased order 
+            3. have to click cancel your order button
+            4. Order cancle notification showed up.
+             As expected
+	
+ 	Expected Result: Able to cancel order
+	Actual Result: User successfully able to cancel his order.
+	Pass/fail: Pass
+	Additional Note:
+
+
+
+
+
+
+ 
