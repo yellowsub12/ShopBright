@@ -14,6 +14,8 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Detail from './Detail';
 import Category from './Components/Category';
+import AdminLogin from './AdminLogin';
+
 
 
 
@@ -47,8 +49,9 @@ function App() {
 
 
   
-<div className="App">
-  <Routes>
+  <div className="App">
+  
+    <Routes>
 
 
 
@@ -60,13 +63,14 @@ function App() {
     <Route path="/detail" element={[<Header/>,<Detail />,<Footer />]} />
     <Route path="/category" element={[<Header/>,<Category />,<Footer />]} />
 
-
     <Route path="/" element={[<Header/>,<Home />,<Footer />]} />
 
+    <Route path="/Adminlogin" element={AdminLogin} />
 
 
-  </Routes>
 
+    </Routes>
+    
 </div>
 
 </Router>

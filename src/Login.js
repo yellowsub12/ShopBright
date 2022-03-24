@@ -3,7 +3,7 @@ import './Login.css'
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./firebase";
 import {Button, Stack} from 'react-bootstrap';
-
+import AdminLogin from './AdminLogin';
 
 function Login () {
     const history = useNavigate();
@@ -33,7 +33,9 @@ function Login () {
             })
             .catch(error => alert(error.message))
     }
+    const adminlink = () => {
 
+    }
     return (
         <div className='login'>
             <Link to='/'>
@@ -63,6 +65,7 @@ function Login () {
 
                 <Button variant="danger" onClick={register} className="btn btn-lg btn-block">Create Account!</Button></Stack>
                 </form>
+                <Link to="/AdminLogin">Get to Admin page</Link>
             </div>
         </div>
     )
