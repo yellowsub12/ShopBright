@@ -4,6 +4,20 @@
     margin-bottom: 20px;
 }
 
+.cardz {
+    width: 25rem;
+}
+
+.card-img-top {
+    width:200px; 
+    height:300px;
+    object-fit:contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
 
 
 

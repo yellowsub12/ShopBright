@@ -1,32 +1,30 @@
 .checkout{
-    padding: 50px;
-    height:max-content;
     
-    display: flex;
-    justify-content: center;
 
-    background-color: white;
     margin-bottom: 300px;
+    display:flex;
     
 }
-.amazon-checkout{
-    background-color: #ececec;
 
-}
-.checkout_ad{
-    width:50%;
-    height:max-content;
-
+.lefter {
+    
+    position: absolute;
+    right: 50px;
+    margin-bottom: 300px;
 }
 
-.title{
-    margin-right:10px;
-    padding:10px;
-    border-bottom:1px solid #ececec;
-}
+.lefterr {
+        margin-top: 40px;
+        left: 200px;    
+        margin-bottom: 300px;
 
-.right{
-    margin-right: 10px;
-    padding: 50px;
+    }
+
+.cancelz {
+    position: relative;
+margin-left: 480px;}
+
+.checkoutcard{
+    width: 25rem;
 
 }

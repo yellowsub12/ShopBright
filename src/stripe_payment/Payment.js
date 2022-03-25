@@ -47,7 +47,7 @@ const handleSubmit = async (event) => {
                 .doc(paymentIntent.id)
                 .set({
                     basket: basket,
-                    amount: paymentIntent.amount,
+                    amount: paymentIntent.amount*1.14975,
                     created: paymentIntent.created
                 })
             setSucceeded(true);
@@ -77,7 +77,7 @@ const [disabled, setDisabled] = useState(true);
           <div className='payment_container'>
               <h1>
                   Checkout (
-                      <Link to="/checkout">{basket?.length} items</Link>
+                      <Link to="/checkout">Cart</Link>
                   )
               </h1>
               <div className='payment_section'>
@@ -127,7 +127,7 @@ const [disabled, setDisabled] = useState(true);
                                       </>
                                   )}
                                   decimalScale={2}
-                                  value={getBaskeTotal(basket)}
+                                  value={getBaskeTotal(basket)*1.14975}
                                   displayType={"text"}
                                   thousandSeparator={true}
                                   prefix={"$"}

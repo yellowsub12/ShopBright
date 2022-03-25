@@ -1,6 +1,8 @@
 import React from 'react';
 import './CheckoutProduct.css'
 import { useStateValue } from "./StateProvider";
+import Button from 'react-bootstrap/Button';
+
 
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
     const [{ basket }, dispatch] = useStateValue();
@@ -13,11 +15,13 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
     }
 
     return (
-        <div className='checkoutProduct'>
-            <img className='image' src={image} />
-            <div className='info'>
-                <p className='title'>{title}</p>
-                <p className="price">
+
+        <div class="card mb-4 " >
+  <img class="card-img-top " src={image} alt="Card image cap"/>
+  <div class="card-body">
+    <h5 class="card-title">{title}</h5>
+    <p class="card-text"></p>
+    <p className="price">
                     <small>$</small>
                     <strong>{price}</strong>
                 </p>
@@ -29,11 +33,12 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                     ))}
                 </div>
                 {!hideButton  && (
-                    <button onClick={removeFromBasket}>Remove from Basket</button>
+                    <Button onClick={removeFromBasket}>Remove from Basket</Button>
                 )}
+  </div>
 
 
-            </div>
+
         </div>
     )
 }

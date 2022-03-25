@@ -29,8 +29,8 @@ function Order({ order }) {
           <p class="order_id">
               Order ID : {order.id}
               </p>
-              <Button variant="primary" onClick={deleteDocument} >Remove Order!</Button>
-
+              <div class="ButtonClass mb-3"><Button variant="primary" onClick={deleteDocument} >Cancel Order!</Button></div>
+                <div class="OrderCard">
               {order.data.basket?.map(item => (
                 <div>
                 <CheckoutProduct
@@ -42,7 +42,9 @@ function Order({ order }) {
                     hideButton
                 />
                 </div>
+                
             ))}
+            </div>
             <CurrencyFormat
                 renderText={(value) => (
                     <h3 className="order_total">Order Total: {value}</h3>

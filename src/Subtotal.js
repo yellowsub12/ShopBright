@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 function Subtotal() {
   const [{ basket }, dispatch] = useStateValue();  return <div class="subtotal">
+
+  
      <CurrencyFormat
         renderText={(value) => (
           <>
@@ -16,7 +18,7 @@ function Subtotal() {
           </>
         )}
         decimalScale={2}
-        value={getBaskeTotal(basket)} 
+        value={(getBaskeTotal(basket)*1.15)} 
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}
