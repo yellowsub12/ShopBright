@@ -27,7 +27,7 @@ const options = {
 const authProvider = FirebaseAuthProvider(config, options);
 
 function App() {
-  return <Admin title="Admin Dashboard" loginPage = {CustomLoginPage} dashboard= {Dashboard} authProvider={authProvider} dataProvider={restProvider('http://localhost:3000')}>
+  return <Admin title="Admin Dashboard" loginPage = {CustomLoginPage} dashboard= {Dashboard} authProvider={authProvider} dataProvider={restProvider('http://localhost:4000')}>
     <Resource name="Products" list={ProductList} create={ProductCreate} edit={ProductEdit} icon={ProductIcon}/>
     <Resource name="Users" list={UserList} create={UserCreate} edit={UserEdit} icon={UserIcon}/>
   </Admin>
