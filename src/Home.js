@@ -150,7 +150,7 @@ Cambrelle moisture wicking lining"
                 <div>
                 See personalized recommendations
             </div>
-            <button class=" button button1" width="50px"><strong>Sign in</strong></button>
+            <button class=" button button1" onClick= {()=>window.location.href="http://localhost:4000"} width="50px"><strong>Sign in</strong></button>
 
             <div>
                 New customer? Start here.

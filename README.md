@@ -1,5 +1,11 @@
 # SOEN-341
 
+
+## TO RUN THE APPLICATION
+
+npm start
+
+
 ## Objective
 
 Develop an Amazon-like e-commerce website.
