@@ -1,72 +1,58 @@
 import React, { useState,useEffect} from 'react'
 import { db } from '../firebase'
+import CategoryProducts from './CategoryProducts';
 
-import firebase from '../firebase';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class ProductsContext extends React.Component {
-    constructor(props) {
-        
-        super(props);
-       
-        this.state = {Products : []}
-        }
-        
-      componentDidMount() {
-       
-       
-         
-          firebase.database().ref("Products").on("value", snapshot => {
-            let productz = [];
-            snapshot.forEach(snap => {
-                productz.push(snap.val());
-            });
-            this.setState({ Products: productz });
+
+
+const Prod = () => {
+  const [loading, setLoading] = useState(true);
+  const [Products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const getProductsFromFirebase = [];
+    const subscriber = db
+      .collection("Products")
+      .onSnapshot((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          getProductsFromFirebase.push({
+            ...doc.data(), //spread operator
+            key: doc.id, // `id` given to us by Firebase
           });
-        
-        
-     }
-      
-      render(){
-      return (
-        <div className="MainDiv">
-          <div class="text-center bg-sky">
-              <h3>How to show firebase data in reactjs?</h3>
-          </div>
-        
-          <div className="container">
-              <table id="example" class="display table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>FirstName</th>
-                        <th>Lastname</th>
-                        <th>Email</th>
-                        <th>Mobile</th>
-                    </tr>
-                </thead>
-                <tbody>
-                {this.state.Products.map(data => {
-                    
-                    return (
-                        <tr>     
-                        <td>{data.descr}</td>
-                        <td>{data.title}</td>
-                        <td>{data.price}</td>
-                        <td>{data.rating}</td>
-                        </tr>
-                        
-                    );
-                   
-                    })}
-            
-                   
-                </tbody>
-                
-             </table>
-              
-         </div>
-        </div>
-      );
-    }
-    }
-    export default ProductsContext;
+        });
+        setProducts(getProductsFromFirebase);
+        setLoading(false);
+      });
+
+    // return cleanup function
+    return () => subscriber();
+  }, [loading]); // empty dependencies array => useEffect only called once
+
+  if (loading) {
+    return <h1>loading firebase data...</h1>;
+  }
+
+  return (
+    <div className="container">
+      <h1>Products:</h1>
+      {Products.length > 0 ? (
+        Products.map((item) => <CategoryProducts
+        id= {item.id}
+        title= {item.title}
+        image= {item.image}
+        price= {item.price}
+        rating= {item.rating}
+        descr={item.descr}
+/>
+      )) : (
+        <h1>no answers yet :(</h1>
+      )}
+    </div>
+  );
+};
+
+export default Prod
+
+

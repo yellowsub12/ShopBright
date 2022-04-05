@@ -2,19 +2,12 @@ import {React,useState, useEffect} from 'react'
 import './FirebaseProducts.css'
 import Button from 'react-bootstrap/Button'
 import { db, storage } from '../firebase';
+import Prod from '../Components/ProductsContext';
 
 
 
 function FirebaseProducts()  {
-        const [Products, setProducts] = useState([])
-        useEffect(() => {
-            db.collection('Products').onSnapshot(snapshot=>{
-                setProducts(snapshot.docs.map(doc => ({id:doc.id, Products:doc.data().Products})))
-            })
 
-
-        }, [])
-    
 
         const [title, setProductName] = useState('');
         const [price, setProductPrice] = useState(0);
@@ -99,14 +92,9 @@ function FirebaseProducts()  {
                 
             </form>
             {error && <span className='error-msg'>{error}</span>}
-            <div class="row">
-            {Products.map(Products => (           
-                Products={Products}
 
-))}
-</div>
                 
-            
+            <Prod/>
 
         </div>
         );

@@ -16,7 +16,7 @@ import Detail from './Detail';
 import Category from './Components/Category';
 import PaymentZ from './PaymentZ';
 import FirebaseProducts from './FirebaseProducts/FirebaseProducts'
-import ProductsContext from './Components/ProductsContext';
+import Prod from './Components/ProductsContext';
 
 
 const promise = loadStripe (
@@ -62,7 +62,7 @@ function App() {
     <Route path="/detail" element={[<Header/>,<Detail />,<Footer />]} />
     <Route path="/category" element={[<Header/>,<Category />,<Footer />]} />
     <Route path="/products" element={[<Header/>,<FirebaseProducts />,<Footer />]} />
-    <Route path="/productscontext" element={[<Header/>,<ProductsContext />,<Footer />]} />
+    <Route path="/prod" element={[<Header/>,<Prod />,<Footer />]} />
 
 
 
