@@ -1,0 +1,31 @@
+.h2_class{
+    margin-bottom: 700px;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.card_rowA{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.card_row{
+
+    margin-bottom: 100px;
+}
+.announcement{
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.GoBackButton{
+    position: absolute;
+    right: 60px;
+    top:120px;
+
+}
