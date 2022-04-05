@@ -1,0 +1,13 @@
+.orders {
+    padding: 50px;
+    min-height: 500px;
+}
+
+.order {
+
+    border: 5px solid rgb(48, 45, 172);
+    position: relative;
+    padding: 60px;
+    margin-top: 30px;
+}
+
