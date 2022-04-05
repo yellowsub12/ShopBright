@@ -1,10 +1,10 @@
-#Get Started
+# Get Started
 ```
 username: test@example.com
 password: test@example.com
 ```
 
-# Get started
+
 You need to add the private Firebase connection file: `src/FIREBASE_CONFIG.js` with the following format from firebase:
 
 ``` js
