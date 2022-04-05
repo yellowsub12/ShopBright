@@ -1,0 +1,30 @@
+.checkout{
+    
+
+    margin-bottom: 300px;
+    display:flex;
+    
+}
+
+.lefter {
+    
+    position: absolute;
+    right: 50px;
+    margin-bottom: 300px;
+}
+
+.lefterr {
+        margin-top: 40px;
+        left: 200px;    
+        margin-bottom: 300px;
+
+    }
+
+.cancelz {
+    position: relative;
+margin-left: 480px;}
+
+.checkoutcard{
+    width: 25rem;
+
+}
