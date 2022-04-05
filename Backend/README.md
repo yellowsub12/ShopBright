@@ -1,21 +1,33 @@
-You can install it (and its required dependencies) using:
+An example project for the [react-admin-firebase](https://github.com/benwinding/react-admin-firebase) package.
 
-npm install
+# Demo
+Try the [demo here!](https://benwinding.github.io/react-admin-firebase)
 
-In the project directory, you can run:
-
-### `npm run start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:4000) to view it in your browser.
-
-
-### Login Admin
-
+```
 username: test@example.com
-password: password
+password: test@example.com
+```
 
-### Database
+# Get started
+You need to add the private Firebase connection file: `src/FIREBASE_CONFIG.js` with the following format from firebase:
 
-The Product and user data is saved in Database.json file. It's connected to the client side via REST API.
+``` js
+export const firebaseConfig = {
+  apiKey: "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  authDomain: "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  databaseURL: "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  projectId: "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  storageBucket: "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  messagingSenderId: "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+};
+```
 
+Don't forget to add the `export` infront of the configuration that Firebase gives you!
+
+Then just run `npm run start`
+
+### Additional Dev Notes
+The following 2 files are to patch the `react-scripts` package. These are copied after install (postinstall), and allow better sourcemapping to the src files in the parent folder.
+
+- `src-demo/webpack-devserver-override.js`
+- `src-demo/webpack-override.js`

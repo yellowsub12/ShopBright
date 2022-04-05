@@ -1,18 +1,38 @@
 {
-  "name": "new-folder",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "server": "json-server --watch Database.json --port 5000 --middlewares ./range.js",
-    "client": "npm start --prefix client",
-    "start":"concurrently \"npm run server\" \" npm run client\""
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "test-simple-react-admin",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "concurrently": "^7.0.0",
-    "json-server": "^0.17.0"
-  }
+    "firebase": "^9.6.4",
+    "ra-input-rich-text": "^3.3.1",
+    "react": "^17.x",
+    "react-admin": "^3.19.10",
+    "react-admin-firebase": "3",
+    "react-dom": "^17.x",
+    "react-firebaseui": "^6.0.0",
+    "react-router-dom": "^5.x",
+    "react-scripts": "^5.0.0",
+    "source-map-loader": "^3",
+    "test-simple-react-admin": "file:"
+  },
+  "devDependencies": {
+    "concurrently": "4.1.1",
+    "cpx": "1.5.0",
+    "gh-pages": "3.2.3"
+  },
+  "scripts": {
+    "start": "npm install && set PORT=5000 && react-scripts start",
+    "build": "react-scripts build",
+    "build-ci": "react-scripts build",
+    "cp-dist": "rm -rf ./node_modules/react-admin-firebase/dist && cp -r ../dist ./node_modules/react-admin-firebase/dist",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
