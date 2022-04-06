@@ -13,10 +13,10 @@ import Login from './Login';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Detail from './Detail';
-import Category from './Category/Category';
-import PaymentZ from './PaymentZ';
-import Search from './Search/Search'
-
+import Category from './Components/Category';
+import FirebaseProducts from './FirebaseProducts/FirebaseProducts'
+import Prod from './FirebaseProducts/ProductsContext.js';
+import Search from './Search/Search';
 
 
 const promise = loadStripe (
@@ -61,8 +61,8 @@ function App() {
     <Route path="/orders" element={[<Header/>, <Orders/>, <Footer />]} />
     <Route path="/detail" element={[<Header/>,<Detail />,<Footer />]} />
     <Route path="/category" element={[<Header/>,<Category />,<Footer />]} />
-    <Route path="/paymentZ" element={[<Header/>,<PaymentZ />,<Footer />]} />
-    <Route path="/search" element={[<Header/>,<Search />,<Footer />]} />
+    <Route path="/products" element={[<Header/>,<FirebaseProducts />,<Footer />]} />
+    <Route path="/search" element={[<Header/>,<Search/>,<Footer />]} />
 
 
 

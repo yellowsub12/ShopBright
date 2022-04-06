@@ -1,15 +1,29 @@
-.Search{
-    margin-bottom: 200px;
+.h2_class{
+    margin-bottom: 700px;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.card_rowA{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.card_row{
+
+    margin-bottom: 100px;
+}
+.announcement{
+    align-items: center;
+    width: 100%;
+    text-align: center;
 
 }
 
-.card-img-top {
-    width:200px; 
-    height:300px;
-    object-fit:contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.GoBackButton{
+    position: relative;
+    margin-left: 90%;
 
-  }
-
+}

@@ -1,41 +1,90 @@
-import React, {useState} from 'react';
-import Products from '../Products.js'
+import React, {useState, useEffect} from "react";
+import {useLocation, Link} from "react-router-dom";
+import { db } from '../firebase'
+import Button from 'react-bootstrap/Button';
 
+import './Search.css'
+import CategoryProducts from "../Components/CategoryProducts";
 
+const Search = () => {
 
-function Search() {
-    const [data, setData] = useState(Products);
-    const filterResult=(categoryItem)=>{const result=Products.filter((currentData)=>{return currentData.category===categoryItem;
-    }); setData(result);}
-  return (
-    <div className='Search container-fluid mx-2'>
-                            <div className="col-md-3 row mt-5 mx-2">
+    const useQuery = () => {
+        return new URLSearchParams(useLocation().search);
+    }
 
+    let query = useQuery();
+    let search = query.get("name");
+    console.log("search ",search)
 
-<div class="list-group" id="list-tab" role="tablist">
-<a class="list-group-item list-group-item-action active" id="list-home-list" onClick={()=>filterResult('Men')} data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Men</a>
-<a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile" onClick={()=>filterResult('Women')}>Women</a>
-<a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile" onClick={()=>filterResult('Children')}>Children</a>
-<a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile" onClick={()=>filterResult('Electronics')}>Electronics</a>
-<a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile" onClick={()=>filterResult('Fashion')}>Fashion</a>
-<a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages" onClick={()=>setData(Products)}>All</a>
-</div>
-
-
-</div>
-
-<div class="col-md-9 card_row ">
-                        <div class="row rowz col-md-4 mb-4 card_row ">
-    {Products.map((val,key)=> {
-        return <div> {val.title}</div>;
+    const [loading, setLoading] = useState(true);
+    const [Products, setProducts] = useState([]);
+  
+    useEffect(() => {
+      const getProductsFromFirebase = [];
+      const subscriber = db
+        .collection("Products")
+        .where('title', '>=', search)
+        .where('title', '<=', search+ '\uf8ff')
+        .onSnapshot((querySnapshot) => {
+          querySnapshot.forEach((doc) => {
+            getProductsFromFirebase.push({
+              ...doc.data(), //spread operator
+              key: doc.id, // `id` given to us by Firebase
+            });
+          });
+          setProducts(getProductsFromFirebase);
+          setLoading(false);
+        });
+    
         
-    })}
+
+      // return cleanup function
+      return () => subscriber();
+    }, [loading]); // empty dependencies array => useEffect only called once
+  
+    if (loading) {
+      return <h1>loading firebase data...</h1>;
+    }
+    
+    
+    
+    return (
+        <div className="Search center">
+            <div className="GoBackButton">
+            <Link to="/">
+           <Button variant="primary" size="lg">Go Back</Button>
+           </Link>
+           </div>
+            {Object.keys(Products).length === 0 ? (
+                <h1 className="h2_class">No products found! The search term '{query.get("name")}' did not produce any results!</h1>
+            ) : (
+                <div>
+    <h2 class="announcement">You've Searched For</h2>
+            <br/>
+            <div class="col-md-9 card_rowA">
+                        <div class="row rowz ">
+                        {Products.map(item=>(
+                        <CategoryProducts
+                        id= {item.id}
+                        title= {item.title}
+                        image= {item.image}
+                        price= {item.price}
+                        rating= {item.rating}
+                        descr={item.descr}
+        />
+        ))}
+                
+                        </div>
+                    </div>
 
 </div>
-</div>
-
-    </div>
-  )
-}
+            )
+            
+            
+            
+                        }  
+        </div>
+    
+    )}
 
 export default Search

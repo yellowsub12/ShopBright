@@ -2,10 +2,9 @@ import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import {useStateValue} from "../StateProvider"
 import Products from '../Products';
-import './Category.css';
 
 
-function CategoryProducts({id, title, price, image, rating, category, descr = ''}) {
+function FirebaseProducts({id, title, price, image, rating, category, descr = ''}) {
   
     const [{basket}, dispatch] = useStateValue(Products);
     const [data, setData] = useState(Products);
@@ -61,4 +60,4 @@ function CategoryProducts({id, title, price, image, rating, category, descr = ''
   )
 }
 
-export default CategoryProducts
+export default FirebaseProducts

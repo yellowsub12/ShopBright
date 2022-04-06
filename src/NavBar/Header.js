@@ -1,12 +1,20 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./Header.css";
-
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { useStateValue } from "../StateProvider";
 import { auth } from "../firebase";
+import Button from 'react-bootstrap/Button';
 
 
 function Header() {
+    const [search, setSearch]= useState()
+    const navigate = useNavigate();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate(`/search?name=${search}`);
+        setSearch("");
+
+    }
   const handleAuthentication = () => {
       if (user) {
           auth.signOut();
@@ -19,10 +27,10 @@ function Header() {
       <div class="container-fluid">
           <div class="row align-items-center">
               <div class="col-lg-3 col-sm-4 col-md-5 col-5"> <a href="/" class="brand-wrap" data-abc="true">
-              <Link to="/"><span class="logo">Amazon</span></Link> </a> </div>
+              <Link to="/"><span class="logo"><img src="../imgs/Logo2.png" class="ShopLogo" /></span></Link> </a> </div>
               <div class="col-lg-4 col-xl-5 col-sm-8 col-md-4 d-none d-md-block">
-                  <form action="#" class="search-wrap">
-                      <div class="input-group w-100"> <input type="text" class="form-control search-form" placeholder="Search"/>
+                  <form class="search-wrap"  onSubmit={handleSubmit}>
+                      <div class="input-group w-100"> <input type="text" class="form-control search-form inputField" placeholder="Search products..." onChange={(e) => setSearch(e.target.value)} value={search}/>
                           <div class="input-group-append"> <button class="btn-primary search-button" type="submit"> <i class="fa fa-search"></i> </button> </div>
                       </div>
                   </form>
@@ -47,15 +55,14 @@ function Header() {
   </section>
   <nav class="navbar navbar-expand-md navbar-main border-bottom">
       <div class="container-fluid">
-          <form class="d-md-none my-2">
-              <div class="input-group"> <input type="search" name="search" class="form-control" placeholder="Search" required=""/>
-                  <div class="input-group-append"> <button type="submit" class="btn btn-secondary"> <i class="fa fa-search"></i> </button> </div>
-              </div>
-          </form> <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#dropdown6" aria-expanded="false"> <span class="navbar-toggler-icon"></span> </button>
+          <form class="d-md-none my-2" onSubmit={handleSubmit}>
+               <input type="text" class="inputField" placeholder="Search products..."  onChange={(e) => setSearch(e.target.value)} value={search}/>
+                  
+          </form> <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#dropdown6" > <span class="navbar-toggler-icon"></span> </button>
           <div class="navbar-collapse collapse" id="dropdown6" >
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item dropdown"> 
-                  <Link to="/Category"><a class="nav-link dropdown-toggle"  data-toggle="dropdown" data-abc="true" aria-expanded="false">Categories</a></Link>
+                  <Link to="/Category"><a class="nav-link dropdown-toggle"   >Categories</a></Link>
                       <div class="dropdown-menu"> 
                           <a class="dropdown-item" href="" data-abc="true">Category 1</a>
                           <a class="dropdown-item" href="" data-abc="true">Category 2</a>

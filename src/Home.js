@@ -153,8 +153,7 @@ Cambrelle moisture wicking lining"
             <button class=" button button1" onClick= {()=>window.location.href="http://localhost:5000/#/login"} width="50px"><strong>Sign in</strong></button>
 
             <div>
-                Login for Admin!
-            </div>
+            Login for Admin!            </div>
         </div>
 
 

@@ -1,5 +1,7 @@
 .orders {
     padding: 50px;
+    min-height: 400px;
+    margin-top: -30px;
 }
 
 .order {
@@ -8,5 +10,6 @@
     position: relative;
     padding: 60px;
     margin-top: 30px;
+    background-color: white;
 }
 

@@ -45,7 +45,7 @@ function Checkout() {
                 </div>
                 <div class="p-2 d-flex">
                     <div class="col-8">xContracted Price</div>
-                    <div class="ml-auto">$186.76</div>
+                    <div class="ml-auto">$0.00</div>
                 </div>
                 <div class="p-2 d-flex">
                     <div class="col-8">xAmount toward deductible</div>
@@ -57,12 +57,12 @@ function Checkout() {
                 </div>
                 <div class="p-2 d-flex">
                     <div class="col-8">xCopayment</div>
-                    <div class="ml-auto">+ $40.00</div>
+                    <div class="ml-auto">+ $0.00</div>
                 </div>
                 <div class="border-top px-4 mx-3"> </div>
                 <div class="p-2 d-flex pt-3">
                     <div class="col-8">xMaximum out-of-pocket on Insurance Policy (not reached)</div>
-                    <div class="ml-auto">$40.00</div>
+                    <div class="ml-auto">$0.00</div>
                 </div>
                 <div class="p-2 d-flex">
                     <div class="col-8">Total before Taxes</div>

@@ -13,8 +13,8 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.0",
     "bootstrap": "^5.1.3",
-    "concurrently": "^7.0.0",
     "firebase": "^9.6.7",
+    "get-google-fonts": "^1.2.2",
     "jquery": "^3.6.0",
     "moment": "^2.29.1",
     "react": "^17.0.2",
@@ -26,11 +26,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "backend": "npm start --prefix Backend",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start": "concurrently \"react-scripts start\" \" npm run backend\""
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
