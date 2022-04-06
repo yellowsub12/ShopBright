@@ -32,7 +32,8 @@ Finally, once the user is ready, they can then check out to a payment page where
 * Javascript
 
 # How To Run
-Run npm install and npm start in main dir
-Run npm install and firebase emulators:start in the functions folder
-Run npm start in backend folder
-Profit!
+* Run npm install and npm start in main dir
+* Run npm install and firebase emulators:start in the functions folder
+* Run npm start in backend folder
+* ... 
+* Profit!

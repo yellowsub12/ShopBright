@@ -4,7 +4,7 @@ import { db } from '../firebase'
 import Button from 'react-bootstrap/Button';
 
 import './Search.css'
-import CategoryProducts from "../Components/CategoryProducts";
+import CategoryProducts from "../Category/CategoryProducts";
 
 const Search = () => {
 
