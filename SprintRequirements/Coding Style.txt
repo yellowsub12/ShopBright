@@ -1,0 +1,9 @@
+#Coding Style
+
+Function Naming Convention : As for function names, all first letters of words are capitalized, including functions with two words in the name, like for example CategoryProducts and CheckoutProduct. 
+
+CSS class names/attributes : Starts with class name with first letter minimized and then the specific detail, for example home_container and home_row for the homepage. So
+
+Constants : Most often if two words, start with minimized letter and then next word starts with capital letter, like const handleAuthentication. 
+
+Variables : Variables if one word start with a minimized character, like value, but the second word starts with a capital letter, like decimalFormat. 

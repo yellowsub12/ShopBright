@@ -1,4 +1,4 @@
-# SOEN-341
+# SOEN-341 - ShopBright E-Commerce Store
 
 ## Objective
 
