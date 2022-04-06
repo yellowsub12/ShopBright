@@ -29,6 +29,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "backend": "npm start --prefix Backend",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

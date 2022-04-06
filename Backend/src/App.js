@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { ProductList, ProductShow, ProductCreate, ProductEdit } from './products';
-import { UserList, UserShow, UserCreate, UserEdit } from './users';
 import { Admin, Resource } from 'react-admin';
 import {
   FirebaseDataProvider,
@@ -15,7 +14,6 @@ import UserIcon from '@material-ui/icons/People';
 import CommentIcon from '@material-ui/icons/Comment';
 
 import * as Product from "./products";
-import * as Users from "./users";
 import * as Comments from "./comments";
 
 import CustomLoginPage from './CustomLoginPage';
@@ -55,20 +53,13 @@ class App extends React.Component {
           authProvider={authProvider}
         >
           <Resource
-            name="products"
+            name="Products"
             list={ProductList}
             show={ProductShow}
             create={ProductCreate}
             edit={ProductEdit}
           />
-          <Resource
-            name="users"
-            icon={UserIcon}
-            list={UserList}
-            show={UserShow}
-            create={UserCreate}
-            edit={UserEdit}
-          />
+          
         </Admin>
         <EventMonitor />
       </>

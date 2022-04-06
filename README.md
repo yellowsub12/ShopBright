@@ -25,8 +25,14 @@ Finally, once the user is ready, they can then check out to a payment page where
 * Vithujanan Vigneswaran [Houdini29]
 
 ## Technologies
-* JavaScript
-* HTML & CSS
-* Python
-* SQL
+* React.js
 * Bootstrap
+* Firebase
+* HTML & CSS
+* Javascript
+
+# How To Run
+Run npm install and npm start in main dir
+Run npm install and firebase emulators:start in the functions folder
+Run npm start in backend folder
+Profit!
