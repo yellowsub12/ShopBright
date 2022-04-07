@@ -24,7 +24,7 @@ function Order({ order }) {
                 console.log("Error : " + err.message);
             });}
   return (
-      <div class="order">
+      <div class="order" data-testid="orders">
           <h2>Order</h2>
           <p>{moment.unix(order.data.created).format("MMMM Do YYYY, h:mma")}</p>
           <p class="order_id">

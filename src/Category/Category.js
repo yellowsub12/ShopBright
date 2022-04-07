@@ -60,7 +60,7 @@ function Category() {
 
     
     return (
-        <div class="Category">
+        <div class="Category" data-testid="category">
             
         <div className="container-fluid mx-2 ">
             <div className="row mt-5 mx-2">

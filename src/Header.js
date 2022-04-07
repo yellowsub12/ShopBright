@@ -22,7 +22,7 @@ function Header() {
   }
   const [{ basket, user }, dispatch] = useStateValue();
   return (
-    <div className='header'>
+    <div className='header' data-testid="header">
         <section class="header-main border-bottom">
       <div class="container-fluid">
           <div class="row align-items-center">
