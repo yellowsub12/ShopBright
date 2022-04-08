@@ -387,7 +387,7 @@ Test condition: Able to reach home page
             5.User can select or add his desirable product to the cart
              As expected
              Expected Result: Searchable product should show
-	Actual Result: Search icon doesnt work.
+	Actual Result: Search icon work.
 	Pass/fail: Passed
 	Additional Note:
 
