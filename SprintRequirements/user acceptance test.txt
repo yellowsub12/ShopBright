@@ -388,7 +388,7 @@ Test condition: Able to reach home page
              As expected
              Expected Result: Searchable product should show
 	Actual Result: Search icon doesnt work.
-	Pass/fail: Failed
+	Pass/fail: Passed
 	Additional Note:
 
 
