@@ -1,6 +1,8 @@
 import React from 'react'
 import "./goods.css"
 import {useStateValue} from "./StateProvider"
+import Button from 'react-bootstrap/Button'
+
 
 //add goods Component
 function Goods({id, title, image, price, rating, descr = ''}) {
@@ -50,10 +52,12 @@ function Goods({id, title, image, price, rating, descr = ''}) {
                             ))}
                     </div>
                 </div>
+                <br/>
                 <div>
                     {descr}
                 </div>
-                <button onClick={addToBasket} className="goods_button">Add to Basket</button>
+                <br/>
+                <Button onClick={addToBasket} className="goods_button">Add to Basket</Button>
             </div>
         </div>
     )

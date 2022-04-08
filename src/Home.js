@@ -24,7 +24,7 @@ function Home() {
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://m.media-amazon.com/images/I/71OXCC4xYmL._SX3000_.jpg" class="d-block w-100"  alt="..."/>
+            <img src="https://m.media-amazon.com/images/I/71OXCC4xYmL._SX3000_.jpg" class="d-block w-100 bg"  alt="..."/>
           </div>
           <div class="carousel-item">
             <img src="https://m.media-amazon.com/images/I/6138dCMwqPL._SX3000_.jpg" class="d-block w-100" alt="..."/>
@@ -119,6 +119,7 @@ Cambrelle moisture wicking lining"
         price={99.99}
         image ="https://m.media-amazon.com/images/G/01/kindle/journeys/YzQ1ODEyNTMt/YzQ1ODEyNTMt-OWZmOTU3NDIt-w210._AC_SY200_.jpeg"
         rating = {3}
+        descr = ""
         />
 
     </div>
@@ -129,6 +130,7 @@ Cambrelle moisture wicking lining"
         price={999.99}
         image ="https://i5.walmartimages.com/asr/fd596ed4-bf03-4ecb-a3b0-7a9c0067df83.bb8f535c7677cebdd4010741c6476d3a.png"
         rating = {5}
+        descr = "Lightning Speed - Harness the power of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation console can do."
         />
         <Product 
         id="1333627"
@@ -136,6 +138,7 @@ Cambrelle moisture wicking lining"
         price={49.99}
         image ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apple_airpods_pro.jpg/800px-Apple_airpods_pro.jpg"
         rating = {5}
+        descr = ""
         />
       
 </div>

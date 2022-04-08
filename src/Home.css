@@ -68,3 +68,11 @@ html,body {
      height:350px;
 
  }
+
+ .bg{
+    background: #ececec;
+    background-image: linear-gradient(
+    to bottom, transparent, #ececec
+  ),#ececec;
+  background-repeat: no-repeat;
+ }
