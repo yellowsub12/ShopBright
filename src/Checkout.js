@@ -11,7 +11,7 @@ import Button from 'react-bootstrap/Button';
 function Checkout() {
   const [{ basket, user}, dispatch]=useStateValue();
   return (
-    <section class="amazon-checkout container-fluid  ">
+    <section class="amazon-checkout container-fluid  " data-testid="checkout">
 
     <div className='checkout'>
     <div className='lefterr  col-md-4 '>

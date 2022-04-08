@@ -49,7 +49,7 @@ const Search = () => {
     
     
     return (
-        <div className="Search center">
+        <div className="Search center" data-testid="search">
             <div className="GoBackButton">
             <Link to="/">
            <Button variant="primary" size="lg">Go Back</Button>

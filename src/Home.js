@@ -15,7 +15,7 @@ function Home() {
   }
   const [{ basket, user }, dispatch] = useStateValue();
   return (
-    <div className="home">
+    <div className="home" data-testid="home">
       
         <div id="container">
 

@@ -35,7 +35,7 @@ function Login () {
     }
 
     return (
-        <div className='login'>
+        <div className='login' data-testid="login">
             <Link to='/'>
                 <img
                     className="login__logo"

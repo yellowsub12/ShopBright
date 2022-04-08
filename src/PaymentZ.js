@@ -19,7 +19,7 @@ function PaymentZ() {
 
     
 
-<div class="container rounded bg-white">
+<div class="container rounded bg-white" data-testid="payment">
     <div class="row d-flex justify-content-center pb-5">
         <div class="col-sm-5 col-md-5 ml-1">
         <div className='payment_items'>

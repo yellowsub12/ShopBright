@@ -6,7 +6,7 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <div className='header'>
+    <div className='header' data-testid="footer">
       <section class="amazon-footer">
         <div id="container">
 

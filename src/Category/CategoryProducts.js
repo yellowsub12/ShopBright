@@ -37,7 +37,7 @@ function CategoryProducts({id, title, price, image, rating, category, descr = ''
     };
   
     return (
-         <div class="col-md-4 mb-4 card_row" key={id}>
+         <div class="col-md-4 mb-4 card_row" key={id} data-testid="categoryProducts">
                                  <div class="card">
                                  <img onClick={jumpToDetail} src={image} class="card-img-top" alt="..."/>
                                  <div class="card-body">

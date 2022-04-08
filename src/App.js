@@ -13,7 +13,7 @@ import Login from './Login';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Detail from './Detail';
-import Category from './Components/Category';
+import Category from './Category/Category';
 import FirebaseProducts from './FirebaseProducts/FirebaseProducts'
 import Prod from './FirebaseProducts/ProductsContext.js';
 import Search from './Search/Search';
