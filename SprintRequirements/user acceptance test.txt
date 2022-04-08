@@ -1,4 +1,3 @@
-Written by Robayth
 
 Test Case US 01:
 
@@ -17,6 +16,7 @@ Test Case US 01:
 	2. Enter Password
 	As Expected
 	3. Click Sign in
+            user can sign in with google also
 	Check validation
 	// show error message if there is an issue with sign in
 	4. If Sign in successful user is redirected to home page
@@ -248,7 +248,7 @@ Test condition: Able to reach the Product Detail page
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Test Case US 11:
-Check the Subtotal
+Check the Subtotal(+tax,shipping fee)
 Test Description: User can add product as much as he wants and the total price of the products will show in the cart page.
 Test condition: Able to reach the cart page 
 	Pre-Condition:   Able to reach the checkout page.
@@ -261,14 +261,14 @@ Test condition: Able to reach the cart page
 	As Expected
 	
  	Expected Result: Able to so the subtotal with tax,shipping fee.(Ongoing)
-	Actual Result: User successfully can see the subtotal 
-	Pass/fail: 
+	Actual Result: User successfully can see the subtotal (+tax,shipping fee)
+	Pass/fail: Passed
 	Additional Note:
  
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Test Case US 12:
+Test Case US 12
 Place an order 
 Test Description: User can place an order of his selected items.
 Test condition: Able to reach the  checkout page.
@@ -279,7 +279,7 @@ Test condition: Able to reach the  checkout page.
 	1. Go to checkout page
 	2. User can see the see the Payment method
             3. Enter a card number
-            4.Then click BUY
+            4.Then click BUY NOW
                 Button should work 
             As expected
 	
@@ -291,47 +291,105 @@ Test condition: Able to reach the  checkout page.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Test Case US 13:
-View the current order
-Test Description: User can see his/her current order after purchasing.
-Test condition: Able to reach the  current order page
-	Pre-Condition:   Able to purchase
+Test Case US 13
+Review Items and Delivery
+Test Description: User can see his/her current order in the checkout page.
+Test condition: Able to reach the  checkout  page
+	Pre-Condition:   Able to Add products and reach to the chcekout page
 
 	Steps:
 	
-	1. Go to current order page
-	2. User can see the his purchased order 
+	1. Go to checkout  page
+	2. User can see the his order 
              As expected
 	
  	Expected Result: Able to see current order
-	Actual Result: User successfully see his purchased order.
-	Pass/fail: Pass
+	Actual Result: User successfully can see his order.
+	Pass/fail: pass
 	Additional Note:
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Test Case US 14:
-Cancel an order
-Test Description: User can see his/her current order after purchasing.
+Test Case US 14
+Cancle an order
+Test Description: User can see his/her current order after adding product to the cart.
 Test condition: Able to reach the  current order page
 	Pre-Condition:   Able to purchase
 
 	Steps:
 	
 	1. Go to current order page
-	2. User can see the his purchased order 
-            3. have to click cancel your order button
-            4. Order cancle notification showed up.
+	2. User can see the his added order 
+            3. have to click cancle and return to website button
+            4. Order cancle should notification showed up or able to reach the homepage .
              As expected
 	
- 	Expected Result: Able to cancel order
-	Actual Result: User successfully able to cancel his order.
-	Pass/fail: Pass
+ 	Expected Result: Able to cancle 
+	Actual Result: User couldnt successfully able to cancle his order.
+	Pass/fail: FAILED
 	Additional Note:
 
 
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+ Test Case US 15
+Forget Password ?
+Test Description: User can change their password if they lost/forget it.
+Test condition: Attempt wrong password
+	Pre-Condition:   Able to reach sign in page
+
+	Steps:
+	
+	1. Go to sign in page
+	2. User can try login with his/her password
+            3. unsuccessful attempt 
+            4. Click Forget password .
+            5.should successfully reach the forget password page
+             As expected
+            6.Enter email adress
+            7.Click send email.
+            Button should work 
+           Password reset email sent! message shows
+              As expected
+            8.User will recieve an email with a link where he/she can change his password
+              Link should recieved and workable 
+              As expected
+           9.Enter new password
+          10. user can save it
+           11.Password changed message will pop up
+               User can sign in with new password 
+                As expected
+ 	Expected Result: Able to change password
+	Actual Result: User successfully able to change  his password.
+	Pass/fail: Pass
+	Additional Note:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Test Case US 16
+
+Search Engine
+Test Description: User can search products.
+Test condition: Able to reach home page
+	Pre-Condition:   Able to reach to the navbar
+
+	Steps:
+	
+	1. User can access it from anywhere from the website
+	2. User has to enter the correct product name 
+            3. Click search icon
+              Search icon should work
+             As expected
+            4. Product will show.
+            5.User can select or add his desirable product to the cart
+             As expected
+             Expected Result: Searchable product should show
+	Actual Result: Search icon doesnt work.
+	Pass/fail: Failed
+	Additional Note:
 
 
- 
+
